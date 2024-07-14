@@ -23,16 +23,16 @@ public class App {
 			
 			if (card1.getValue() > card2.getValue()) {
 				player1.incrementScore();
-				System.out.println("Player 1 received a point");
+				System.out.println("Player 1 gets a point");
 			} else if (card1.getValue() < card2.getValue()) {
 				player2.incrementScore();
-				System.out.println("Player 2 received a point");
+				System.out.println("Player 2 gets a point");
 			} else {
-				System.out.println("No point was awarded");
+				System.out.println("No point awarded");
 			}
 		}
 		
-		System.out.println("Final score: Player 1 - " + player1.getScore() + ", Player 2 - " + player2.getScore()); //#2de Here is the final score comparison and the final scores. This code was attempted.
+		System.out.println("Final score: Player 1: " + player1.getScore() + ", Player 2: " + player2.getScore()); //#2de Here is the final score comparison and the final scores. This code was attempted.
 		
 		if (player1.getScore() > player2.getScore()) { 
 			System.out.println("Player 1 wins");

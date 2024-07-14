@@ -9,12 +9,12 @@ public class Deck {
 	private List<Card> cards; //#1bi1 Here is our List of Card. This code was attempted.
 	cards = new Card[DECK_SIZE];
 	String suits[] = {"spades", "hearts", "clovers", "diamonds"};
-	String numbers[] = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Joker", "Queen", "King"};
+	String numbers[] = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Joker", "Queen", "King", "Ace"};
 	
-	int cardIndex = 0;
+	int index = 0;
 	for (String suit : suits) { //#1bii3 Here the Cards field is populated with 52 cards. This code was attempted.
 		for (String number : numbers) {
-			numbers[cardIndex] = new Card(suit, number);
+			numbers[index] = new Card(suit, number);
 			cardIndex++;
 		}
 	}
